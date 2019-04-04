@@ -17,10 +17,8 @@ function displaySmallManu() {
 
     hamburger.addEventListener("click", function() {
         menu.style.visibility = "visible";
-        menu.style.height = "350px"
     });
     clear.addEventListener("click", function() {
-        menu.style.height = "0";
         menu.style.visibility = "hidden";
     });
 }
@@ -53,11 +51,12 @@ function testForm(ev) {
         errors++;
     }
     if (errors === 0) {
-        sendEmail(name, email, message);
+        message = `<h5>Mail poslao: + ${neme}</h5>`;
+        sendEmail(email, message);
     }
 }
 
-function sendEmail(name, email, message) {
+function sendEmail(email, message) {
 
     Email.send({
         Host: "smtp.yourisp.com",
