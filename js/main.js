@@ -51,7 +51,7 @@ function testForm(ev) {
         errors++;
     }
     if (errors === 0) {
-        message = `<h5>Mail poslao: + ${neme}</h5>`;
+        message += `<h5>Mail poslao: + ${neme}</h5>`;
         sendEmail(email, message);
     }
 }
