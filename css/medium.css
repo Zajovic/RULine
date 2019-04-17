@@ -73,12 +73,22 @@
 /* POLUPROIZVODI PAGE*/
 
 
-/**/
+@media only screen and (max-width: 250px) {
+    .description {
+        font-size: 4.4vw;
+    }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 400px) {
+    .description {
+        font-size: 0.85em;
+    }
+}
 
 @media only screen and (min-width: 400px) {
     .poluproizvod img {
-        width: 240px;
-        height: 360px;
+        width: 270px;
+        height: auto;
     }
     .description {
         font-size: 0.9rem;
@@ -87,8 +97,8 @@
 
 @media only screen and (min-width: 600px) {
     .poluproizvod img {
-        max-width: 260px;
-        max-height: 390px;
+        width: 260px;
+        height: auto;
     }
     .list-name {
         font-size: 1.1rem;

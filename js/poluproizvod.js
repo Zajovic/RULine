@@ -1,6 +1,12 @@
 // CHOOSING PLOT(POLUPROIZVOD PAGE) //
 
+/*  Event Listener*/
 
+window.addEventListener("load", selectPlot);
+document.getElementById("list1").addEventListener("change", selectPlot);
+document.getElementById("list2").addEventListener("change", selectPlot);
+
+/*  Obican plot */
 const antalijaDim = ["67-93/205", "97-102/215"];
 const antalijaPr = ["3,300.00", "3,950.00"];
 
@@ -13,7 +19,7 @@ const sidePr = ["3,850.00"];
 const aeihDim = ["67-93/215"];
 const aeihPr = ["3,850.00"];
 
-
+/*  Furnir plot */
 const dimensionsHJMB = ["67/207", "77/207", "87/207", "97/207"];
 const priceHJM3 = ["5,100.00", "5,400.00", "5,700.00", "6,000.00"];
 const priceHJM4 = ["5,350.00", "5,750.00", "6.050.00", "6,350.00"];
@@ -24,6 +30,7 @@ const siroviMdfDim = ["67-93/207", "67-93/220"];
 const priceMdf4 = ["3,800.00", "4,100.00"];
 const priceMdf6 = ["4,300.00", "4,600.00"];
 
+/*  Create img  */
 
 function printImg1(imgSrc1, imgAlt1) {
     let img1 = document.getElementById("img1");
@@ -32,11 +39,12 @@ function printImg1(imgSrc1, imgAlt1) {
 }
 
 function printImg2(imgSrc2, imgAlt2) {
-    let img1 = document.getElementById("img2");
-    img1.src = imgSrc2;
-    img1.alt = imgAlt2;
+    let img2 = document.getElementById("img2");
+    img2.src = imgSrc2;
+    img2.alt = imgAlt2;
 }
 
+/*  Create plot */
 
 function displayPlot(dimensions, prices, dimensionDiv, priceDiv) {
 
@@ -63,11 +71,6 @@ function displayPlot(dimensions, prices, dimensionDiv, priceDiv) {
     }
 
 }
-
-
-window.addEventListener("load", selectPlot);
-document.getElementById("list1").addEventListener("change", selectPlot);
-document.getElementById("list2").addEventListener("change", selectPlot);
 
 function selectPlot() {
 
@@ -138,7 +141,7 @@ function selectPlot() {
 }
 
 
-
+/*  Chosing thickness plot function  */
 
 
 function plotThickness() {
@@ -194,8 +197,8 @@ function createModal() {
     zoomImg.classList.add("zoomImg");
 
     let span = document.createElement("span");
-    span.innerHTML = '&times;';
-    span.classList.add("close");
+    span.innerHTML = "&times;";
+    span.classList.add("closeButton");
 
     let caption = document.createElement("div");
     caption.id = "caption";
