@@ -93,9 +93,9 @@ function selectPlot() {
             displayPlot(dim2, price3, dimensionDiv3, priceDiv3);
             printImg3("img/PERGE.jpg", "Perge-RU308");
             break;
-        case "Somela-RU309":
+        case "Sumela-RU309":
             displayPlot(dim2, price3, dimensionDiv3, priceDiv3);
-            printImg3("img/SOMELA.jpg", "Somela-RU309");
+            printImg3("img/SUMELA.jpg", "Sumela-RU309");
             break;
         case "Truva-RU310":
             displayPlot(dim2, price3, dimensionDiv3, priceDiv3);
