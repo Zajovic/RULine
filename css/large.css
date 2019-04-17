@@ -67,12 +67,25 @@
         padding: 5% 15% 0 15%;
     }
     #first-article>div {
-        padding: 5% 15%;
+        padding: 5% 15% 10% 15%;
         font-size: 0.9rem;
         -ms-box-shadow: -10px 0px 13px -7px rgba(65, 63, 63, 0.66), 10px 0px 13px -7px rgba(65, 63, 63, 0.66), 5px 5px 15px 5px rgba(0, 0, 0, 0);
         -moz-box-shadow: -10px 0px 13px -7px rgba(65, 63, 63, 0.66), 10px 0px 13px -7px rgba(65, 63, 63, 0.66), 5px 5px 15px 5px rgba(0, 0, 0, 0);
         -webkit-box-shadow: -10px 0px 13px -7px rgba(65, 63, 63, 0.66), 10px 0px 13px -7px rgba(65, 63, 63, 0.66), 5px 5px 15px 5px rgba(0, 0, 0, 0);
         box-shadow: -10px 0px 13px -7px rgba(65, 63, 63, 0.66), 10px 0px 13px -7px rgba(65, 63, 63, 0.66), 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    }
+    #first-article>#proizvod-furnir {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        margin: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #first-article>#proizvod-furnir>#furnir-div {
+        margin-left:10%; 
+        padding: 5% 2%; 
+        text-align: justify; 
     }
 }
 
