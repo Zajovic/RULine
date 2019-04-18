@@ -97,7 +97,7 @@
 
 @media only screen and (min-width: 600px) {
     .poluproizvod img {
-        width: 260px;
+        width: 200px;
         height: auto;
     }
     .list-name {
@@ -105,7 +105,7 @@
         height: 40px;
     }
     .description {
-        font-size: 0.95rem;
+        font-size: 0.8rem;
     }
 }
 

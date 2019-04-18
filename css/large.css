@@ -30,7 +30,7 @@
     nav>#menu>ul>li>a {
         font-size: 1.2rem;
         margin: auto;
-        padding: 10px 40px;
+        padding: 10px 30px;
     }
     nav>#menu>ul>li>a>i {
         display: none;
@@ -112,6 +112,11 @@
         background-color: transparent;
         padding: 0;
         box-shadow: none;
+    }
+    .col-sm>.slider-img {
+        margin: auto;
+        height: 400px;
+        width: auto;
     }
 }
 
