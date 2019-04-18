@@ -95,7 +95,7 @@ nav>div {
     margin: 0;
     background-color: #f1f1f1;
     width: 100%;
-    height: 350px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -193,7 +193,7 @@ article>div {
     width: 100%;
     height: auto;
     background-color: #fff;
-    text-align: left;
+    text-align: justify;
     -ms-box-shadow: 2px 1px 10px 1px rgba(65, 63, 63, 0.66);
     -moz-box-shadow: 2px 1px 10px 1px rgba(65, 63, 63, 0.66);
     -webkit-box-shadow: 2px 1px 10px 1px rgba(65, 63, 63, 0.66);
@@ -557,11 +557,14 @@ article>div>h5 {
 }
 
 .gallery-img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 5px;
     border: 1px solid #1A7AAD;
     border-radius: 3px;
-    height: 250px;
-    width: 200px;
+    height: auto;
+    width: 300px;
     margin: 5px auto;
     -ms-box-shadow: 2px 1px 10px 1px rgba(65, 63, 63, 0.66);
     -moz-box-shadow: 2px 1px 10px 1px rgba(65, 63, 63, 0.66);
@@ -570,8 +573,9 @@ article>div>h5 {
 }
 
 .gallery-img-div img {
-    height: 100%;
-    width: auto;
+    margin: auto;
+    height: auto;
+    width: 100%;
 }
 
 .gallery-img-div div {

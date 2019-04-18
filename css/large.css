@@ -1,6 +1,6 @@
 /*nav-bar and manu*/
 
-@media only screen and (min-width: 922px) {
+@media only screen and (min-width: 925px) {
     nav {
         height: auto;
         background-color: #f1f1f1;
@@ -30,7 +30,8 @@
     nav>#menu>ul>li>a {
         font-size: 1.2rem;
         margin: auto;
-        padding: 10px 40px;
+        padding: 10px 30px;
+        text-align: center;
     }
     nav>#menu>ul>li>a>i {
         display: none;
@@ -62,7 +63,7 @@
     }
 }
 
-@media only screen and (min-width: 922px) {
+@media only screen and (min-width: 925px) {
     article {
         padding: 5% 15% 0 15%;
     }
@@ -95,7 +96,7 @@
 
 /*triple slider and header text*/
 
-@media only screen and (min-width: 922px) {
+@media only screen and (min-width: 925px) {
     article h5 {
         margin: 1% auto 10% 5%;
     }
@@ -113,12 +114,16 @@
         padding: 0;
         box-shadow: none;
     }
+    .row>.col-sm>.center-slider-img {
+        margin: auto;
+        height: 450px;
+        width: auto;
+    }
 }
-
 
 /*POLUPROIZVODI PAGE*/
 
-@media only screen and (min-width: 922px) {
+@media only screen and (min-width: 925px) {
     #first-article>#poluproizvodi {
         flex-direction: row;
         padding: 100px 0 60px 0;
@@ -130,7 +135,6 @@
     }
     .image-box {
         margin-top: 0;
-        min-height: 360;
         height: auto;
         box-shadow: none;
     }
@@ -139,7 +143,7 @@
 
 /*  GALLERY PAGE    */
 
-@media only screen and (min-width: 922px) {
+@media only screen and (min-width: 925px) {
     #first-article>#gallery {
         box-shadow: none;
         padding: 0;
@@ -170,7 +174,7 @@
 
 /*contact information and mail form*/
 
-@media only screen and (min-width: 922px) {
+@media only screen and (min-width: 925px) {
     #first-article>#contact-info {
         display: flex;
         flex-direction: row;

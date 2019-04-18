@@ -81,31 +81,31 @@ function selectPlot() {
     switch (list1.options[list1.selectedIndex].value) {
         case "antalija":
             displayPlot(antalijaDim, antalijaPr, dimensionDiv1, priceDiv1);
-            printImg1("img/door.png", "Antalija");
+            printImg1("img/ANATOLIJA.jpg", "Antalija");
             break;
         case "side":
             displayPlot(sideDim, sidePr, dimensionDiv1, priceDiv1);
-            printImg1("img/door.png", "Side");
+            printImg1("img/SIDE.jpg", "Side");
             break;
         case "assos":
             displayPlot(aeihDim, aeihPr, dimensionDiv1, priceDiv1);
-            printImg1("img/door.png", "Assos");
+            printImg1("img/ASSOS.jpg", "Assos");
             break;
         case "efes":
             displayPlot(aeihDim, aeihPr, dimensionDiv1, priceDiv1);
-            printImg1("img/door.png", "Efes");
+            printImg1("img/EFES.jpg", "Efes");
             break;
         case "imperial":
             displayPlot(aeihDim, aeihPr, dimensionDiv1, priceDiv1);
-            printImg1("img/door.png", "Imperial");
+            printImg1("img/IMPERIAL.jpg", "Imperial");
             break;
         case "htit":
             displayPlot(aeihDim, aeihPr, dimensionDiv1, priceDiv1);
-            printImg1("img/door.png", "Htit");
+            printImg1("img/HTIT.jpg", "Htit");
             break;
         case "anatalija furnir hrast":
             displayPlot(antalijaFurnirDim, antalijaFurnirPr, dimensionDiv1, priceDiv1);
-            printImg1("img/door.png", "Antalija Furnir Hrast");
+            printImg1("img/ANATOLIJA.jpg", "Antalija Furnir Hrast");
     }
 
     let list2 = document.getElementById("list2");
@@ -116,11 +116,11 @@ function selectPlot() {
     switch (list2.options[list2.selectedIndex].value) {
         case "hrast":
             displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
-            printImg2("img/logo.jpeg", "Hrast");
+            printImg2("img/door.png", "Hrast");
             break;
         case "jasen":
             displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
-            printImg2("img/logo.jpeg", "Jasen");
+            printImg2("img/door.png", "Jasen");
             break;
         case "mahagoni":
             displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
@@ -136,7 +136,6 @@ function selectPlot() {
             break;
     }
     plotThickness();
-
     document.getElementsByClassName("thickness")[2].classList.remove("marked");
 }
 
@@ -146,6 +145,7 @@ function selectPlot() {
 
 function plotThickness() {
     let list2 = document.getElementById("list2");
+
     document.getElementsByClassName("thickness")[1].classList.add("marked");
     if (list2.options[list2.selectedIndex].value !== "sirovi mdf") {
 
@@ -162,12 +162,14 @@ document.getElementsByClassName("thickness")[1].onclick = function() {
 
     document.getElementsByClassName("thickness")[2].classList.remove("marked");
     this.classList.add("marked");
+    let dimensionDiv2 = document.getElementById("dimensions2");
+    let priceDiv2 = document.getElementById("price2");
 
     if (list2.options[list2.selectedIndex].value == "bukva") {
         displayPlot(dimensionsHJMB, bukvaPrice3, dimensionDiv2, priceDiv2);
     } else if (list2.options[list2.selectedIndex].value == "sirovi mdf") {
         displayPlot(siroviMdfDim, priceMdf4, dimensionDiv2, priceDiv2);
-    } else if (list2.options[list2.selectedIndex].value == "hrast") {
+    } else if (list2.options[list2.selectedIndex].value == "hrast" || "jasen" || "mahagoni") {
         displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
     }
 }
@@ -176,6 +178,8 @@ document.getElementsByClassName("thickness")[2].onclick = function() {
 
     document.getElementsByClassName("thickness")[1].classList.remove("marked");
     this.classList.add("marked");
+    let dimensionDiv2 = document.getElementById("dimensions2");
+    let priceDiv2 = document.getElementById("price2");
 
     if (list2.options[list2.selectedIndex].value == "bukva") {
         displayPlot(dimensionsHJMB, bukvaPrice4, dimensionDiv2, priceDiv2);
