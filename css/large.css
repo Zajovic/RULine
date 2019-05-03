@@ -32,6 +32,9 @@
         margin: auto;
         padding: 10px 30px;
     }
+    nav>#menu>ul>li>a:hover {
+        color: #1A7AAD;
+    }
     nav>#menu>ul>li>a>i {
         display: none;
     }
@@ -147,14 +150,14 @@
 @media only screen and (min-width: 922px) {
     #first-article>#gallery {
         box-shadow: none;
-        padding: 0;
+        padding: 20px 0;
     }
     .gallery-img-div {
-        width: 260px;
-        height: 340px;
+        width: 150px;
+        height: auto;
         margin: 10px;
         cursor: pointer;
-        background: #555;
+        background: transparent;
         transition: 0.25s linear;
     }
     .gallery-img-div div {

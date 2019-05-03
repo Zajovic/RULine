@@ -7,10 +7,10 @@
     }
     #moto {
         margin: auto auto 5px auto;
-        color: #1A7AAD;
+        color: #8F5E37;
         font-weight: 100;
         font-size: 1rem;
-        text-decoration: underline #edd040;
+        text-decoration: underline #1A7AAD;
         letter-spacing: 0.15rem;
         line-height: 1rem;
     }
@@ -63,7 +63,7 @@
         display: block;
     }
     #important {
-        border-left: 1.5px solid #1A7AAD;
+        border-left: 1.5px solid #8F5E37;
         padding: 3% 7%;
         margin: 4% 0;
     }
