@@ -116,11 +116,11 @@ function selectPlot() {
     switch (list2.options[list2.selectedIndex].value) {
         case "hrast":
             displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
-            printImg2("img/door.png", "Hrast");
+            printImg2("img/ASSOS.jpg", "Hrast");
             break;
         case "jasen":
             displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
-            printImg2("img/door.png", "Jasen");
+            printImg2("img/logo.jpeg", "Jasen");
             break;
         case "mahagoni":
             displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
@@ -136,6 +136,7 @@ function selectPlot() {
             break;
     }
     plotThickness();
+
     document.getElementsByClassName("thickness")[2].classList.remove("marked");
 }
 
@@ -145,7 +146,6 @@ function selectPlot() {
 
 function plotThickness() {
     let list2 = document.getElementById("list2");
-
     document.getElementsByClassName("thickness")[1].classList.add("marked");
     if (list2.options[list2.selectedIndex].value !== "sirovi mdf") {
 
@@ -169,7 +169,7 @@ document.getElementsByClassName("thickness")[1].onclick = function() {
         displayPlot(dimensionsHJMB, bukvaPrice3, dimensionDiv2, priceDiv2);
     } else if (list2.options[list2.selectedIndex].value == "sirovi mdf") {
         displayPlot(siroviMdfDim, priceMdf4, dimensionDiv2, priceDiv2);
-    } else if (list2.options[list2.selectedIndex].value == "hrast" || "jasen" || "mahagoni") {
+    } else if (list2.options[list2.selectedIndex].value == "hrast") {
         displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
     }
 }
