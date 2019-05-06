@@ -60,7 +60,7 @@ function sendEmail(email, message) {
 
     Email.send({
         Host: "smtp.yourisp.com",
-        Username: "munjamomacka@gmail.com",
+        Username: "zajovic@hotmail.com",
         Password: "b0804e4e-d77e-4d9f-9765-7754b47ffd80",
         To: "ukipetrovic@gmail.com",
         From: email,
