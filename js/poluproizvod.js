@@ -116,23 +116,23 @@ function selectPlot() {
     switch (list2.options[list2.selectedIndex].value) {
         case "hrast":
             displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
-            printImg2("img/ASSOS.jpg", "Hrast");
+            printImg2("img/HRAST.jpg", "Hrast");
             break;
         case "jasen":
             displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
-            printImg2("img/logo.jpeg", "Jasen");
+            printImg2("img/JASEN.jpg", "Jasen");
             break;
         case "mahagoni":
             displayPlot(dimensionsHJMB, priceHJM3, dimensionDiv2, priceDiv2);
-            printImg2("img/door.png", "Mahagoni");
+            printImg2("img/MAHAGONI.jpg", "Mahagoni");
             break;
         case "bukva":
             displayPlot(dimensionsHJMB, bukvaPrice3, dimensionDiv2, priceDiv2);
-            printImg2("img/door.png", "Bukva");
+            printImg2("img/BUKVA.jpg", "Bukva");
             break;
         case "sirovi mdf":
             displayPlot(siroviMdfDim, priceMdf4, dimensionDiv2, priceDiv2);
-            printImg2("img/door.png", "Sirovi");
+            printImg2("img/EFES.jpg", "Sirovi");
             break;
     }
     plotThickness();

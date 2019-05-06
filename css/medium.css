@@ -85,27 +85,17 @@
     }
 }
 
-@media only screen and (min-width: 400px) {
-    .poluproizvod img {
-        width: 270px;
-        height: auto;
-    }
-    .description {
-        font-size: 0.9rem;
-    }
-}
-
 @media only screen and (min-width: 600px) {
     .poluproizvod img {
-        width: 200px;
+        max-width: 250px;
         height: auto;
     }
     .list-name {
         font-size: 1.1rem;
         height: 40px;
     }
-    .description {
-        font-size: 0.8rem;
+    .poluproizvod .description {
+        font-size: 0.7rem !important;
     }
 }
 
@@ -113,7 +103,7 @@
 /*  GALLERY PAGE*/
 
 @media only screen and (min-width: 600px) {
-    #gallery {
+    .gallery {
         flex-direction: row;
         flex-wrap: wrap;
     }
