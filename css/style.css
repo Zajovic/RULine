@@ -483,6 +483,13 @@ article>div>h5 {
     font-weight: 700;
     cursor: pointer;
 }
+#proizvodi-links {
+    margin-top: 30px;
+}
+#proizvodi-links>div>div {
+    font-size: 1.1rem;
+    padding: 2%;
+}
 
 
 /*  MODAL ANIMATION*/
