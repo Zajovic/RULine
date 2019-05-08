@@ -71,3 +71,4 @@ function sendEmail(email, message) {
         console.log('error received ', error);
     });
 }
+
