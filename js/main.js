@@ -70,5 +70,27 @@ function sendEmail(email, message) {
     ).catch(error => {
         console.log('error received ', error);
     });
-}
 
+}  
+
+$("#y").one("click", false);
+
+/*
+var sirina = window.innerWidth;
+console.log(sirina);
+var y = document.getElementById("y");
+console.log(y);
+var dropDown = document.getElementById("x");
+console.log(dropDown);
+style = window.getComputedStyle(dropDown),
+display = style.getPropertyValue("display");
+
+
+if(sirina < 923 && display == "none") {
+    document.getElementById("y").addEventListener("click", function(event){
+        event.preventDefault();
+    });
+}
+else {
+
+}*/
