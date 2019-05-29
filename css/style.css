@@ -10,7 +10,7 @@ main {
     height: 100%;
     font-family: "Varela Round", "Source Code Pro", sans-serif;
     background-color: #fff;
-    background-image: url("../img/background1.jpg");
+    background-image: url("../img/background-door1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -493,7 +493,17 @@ article>div>h5 {
     font-size: 1.1rem;
     padding: 2%;
 }
-
+#first-article>#ul-vrata {
+    list-style-type: circle;
+}
+#ul-vrata>li {
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+#ul-vrata>li:hover {
+    background: none;
+    color: #555;
+}
 
 /*  MODAL ANIMATION*/
 
