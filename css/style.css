@@ -458,17 +458,18 @@ article>div>h5 {
     min-width: 200px;
     width: auto; 
     position:absolute;
-    top:0;
-    bottom:0;
+    top: 6%;
+    bottom: 0;
     left: 0;
     right: 0;
     margin:auto;
 }
 
 #caption {
+    position: absolute;
+    top: 0;
+    left: 0;
     font-size: 1.25rem;
-    margin: auto;
-    display: block;
     width: 100%;
     height: auto;
     color: #ccc;
@@ -478,6 +479,7 @@ article>div>h5 {
 }
 
 .closeButton {
+    z-index: 1;
     position: absolute;
     top: 0;
     right: 20px;
