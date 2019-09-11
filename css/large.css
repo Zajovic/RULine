@@ -1,6 +1,14 @@
 /*nav-bar and manu*/
 
 @media only screen and (min-width: 922px) {
+    main { 
+        background: none!important;
+        background-image: url("../img/background-door1.jpeg")!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -30%;
+        background-attachment: fixed;
+    }
     nav {
         height: auto;
         background-color: #f1f1f1;
@@ -28,7 +36,7 @@
         display: none;
     }
     nav>#menu>ul>li>a {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin: auto;
         padding: 10px 30px;
     }
@@ -178,7 +186,7 @@
 }
 
 
-/*  GALLERY PAGE    */
+/*  GALLERY  */
 
 @media only screen and (min-width: 922px) {
     #first-article>.gallery {
@@ -186,7 +194,7 @@
         padding: 20px 0;
     }
     .gallery-img-div {
-        width: 150px;
+        width: 200px;
         height: auto;
         margin: 10px;
         cursor: pointer;
@@ -237,7 +245,8 @@
     input {
         padding: 1.5%;
     }
-    #contact-form button {
-        margin-top: 1rem;
+    #contact-form #send-button {
+        margin-top: 1.2rem;
+        font-size: 1.1rem;
     }
 }

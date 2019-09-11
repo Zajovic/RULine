@@ -36,7 +36,6 @@
 <body>
     <main>
         <header>
-            <p id="moto">Text messages may be sent over a cellular network!</p>
         </header>
         <nav>
             <div id="menu">
@@ -103,11 +102,11 @@
                     </div>
                     <div id="contact-form">
                         <h5>Pošaljite poruku</h5>
-                        <form action="#" method="post" name="mail-form">
+                        <form action="https://formspree.io/ru.line@yahoo.com " method="POST">
                             <label for="name">Ime i Prezime:</label><input type="text" name="name" placeholder="Vaše ime i prezime" autofocus>
                             <label for="email">Vaš Email:</label><input type="email" name="email" placeholder="Vaš Email">
                             <label for="message">Poruka:</label><textarea name="message" rows="7"></textarea>
-                            <button type="submit" name="send-buton">Pošalji</button>
+                            <input id="send-button" type="submit" value="Pošalji">
                         </form>
                     </div>
                 </div>
