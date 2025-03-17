@@ -1,6 +1,14 @@
 /*nav-bar and manu*/
 
 @media only screen and (min-width: 922px) {
+    main { 
+        background: none!important;
+        background-image: url("../img/background-door1.jpeg")!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -30%;
+        background-attachment: fixed;
+    }
     nav {
         height: auto;
         background-color: #f1f1f1;
@@ -28,7 +36,7 @@
         display: none;
     }
     nav>#menu>ul>li>a {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin: auto;
         padding: 10px 30px;
     }
@@ -142,20 +150,58 @@
         height: auto;
         box-shadow: none;
     }
+    .description {
+        font-size: 0.8rem;
+    }
+}
+
+/*  PROIZVODI PAGE  */
+
+@media only screen and (min-width: 922px) {
+    #proizvodi-links {
+        width: 100%;
+        height: auto;
+        font-size: 1.3em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    #proizvodi-links>div {
+        display: flex;
+        flex-direction: row;
+    }
+    #proizvodi-links>div>div {
+        flex: 1;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #proizvodi-links>div>div>a {
+        margin: auto;
+    }
+    #proizvodi-links>div>div>a:hover {
+        text-decoration: none
+    }
 }
 
 
-/*  GALLERY PAGE    */
+/*  GALLERY  */
 
 @media only screen and (min-width: 922px) {
-    #first-article>#gallery {
+    #first-article>.gallery {
         box-shadow: none;
         padding: 20px 0;
     }
     .gallery-img-div {
-        width: 150px;
+        width: 200px;
         height: auto;
         margin: 10px;
+        cursor: pointer;
+        background: transparent;
+        transition: 0.25s linear;
+    }
+    .gallery-img-div2 {
         cursor: pointer;
         background: transparent;
         transition: 0.25s linear;
@@ -167,8 +213,14 @@
     .gallery-img-div:hover {
         transform: scale(1.02);
     }
+    .gallery-img-div2:hover {
+        transform: scale(1.02);
+    }
     .gallery-img-div img:hover {
-        opacity: 0.8;
+        opacity: 0.9;
+    }
+    .gallery-img-div2 img:hover {
+        opacity: 0.9;
     }
 }
 
@@ -193,7 +245,8 @@
     input {
         padding: 1.5%;
     }
-    #contact-form button {
-        margin-top: 1rem;
+    #contact-form #send-button {
+        margin-top: 1.2rem;
+        font-size: 1.1rem;
     }
 }

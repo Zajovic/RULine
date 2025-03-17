@@ -26,7 +26,7 @@ displaySmallManu();
 
 //  TEST AND SEND MAIL(CONTACT PAGE)  //
 
-function testForm(ev) {
+/*function testForm(ev) {
     ev.preventDefault();
     //console.log('event submit ', ev);
 
@@ -51,7 +51,7 @@ function testForm(ev) {
         errors++;
     }
     if (errors === 0) {
-        message += `<h5>Mail poslao: + ${neme}</h5>`;
+        message += `<br><h5>Mail poslao: + ${neme}</h5>`;
         sendEmail(email, message);
     }
 }
@@ -60,9 +60,9 @@ function sendEmail(email, message) {
 
     Email.send({
         Host: "smtp.yourisp.com",
-        Username: "munjamomacka@gmail.com",
-        Password: "b0804e4e-d77e-4d9f-9765-7754b47ffd80",
-        To: "ukipetrovic@gmail.com",
+        Username: "zajovic@hotmail.com",
+        Password: "8559df76-d95a-49ff-b7c7-ea4e63fad871",
+        To: "ru.line@yahoo.com",
         From: email,
         Body: message
     }).then(
@@ -70,4 +70,5 @@ function sendEmail(email, message) {
     ).catch(error => {
         console.log('error received ', error);
     });
-}
+
+}*/
